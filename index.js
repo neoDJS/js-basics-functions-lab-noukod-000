@@ -29,7 +29,7 @@ function calculatesFarePrice(start, destination){
   } else if (dist > 2000){
     resultp = 25;
   } else if (dist > 400) {
-    resultp = (0.02 * dist);
+    resultp = (0.02 * (dist-400));
   }
 
   return resultp;
